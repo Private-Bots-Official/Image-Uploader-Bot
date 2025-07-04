@@ -1,4 +1,5 @@
 export const BOT_TOKEN = Deno.env.get("BOT_TOKEN");
+console.log(BOT_TOKEN);
 export const IMGBB_UPLOAD_URL = "https://api-integretion-unblocked.vercel.app/imgbb";
 export const SUBSCRIPTION_CHECK_BOT_TOKEN = BOT_TOKEN;
 export const CHANNEL_USERNAME = Deno.env.get("CHANNEL_USERNAME"); // example -> @Private_Bots
@@ -28,6 +29,7 @@ export const MONGO_URI = (() => {
   
   return uri;
 })();
+console.log(MONGO_URI);
 
 export const USE_DB = Boolean(MONGO_URI);
 export const CLEAN_USERNAME = CHANNEL_USERNAME.replace(/@/g, '');

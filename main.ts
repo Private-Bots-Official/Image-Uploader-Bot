@@ -2,8 +2,6 @@ import { serve } from "https://deno.land/std@0.195.0/http/server.ts";
 import { BotController } from "./controllers/bot.controller.ts";
 
 serve(async (req) => {
-  if (req.method !== "POST") return new Response("Method Not Allowed", { status: 405 });
-
   try {
     const update = await req.json();
     return await BotController.handleUpdate(update);

@@ -86,6 +86,10 @@ export const BotController = {
             reply_markup: imageUrl ? {
               inline_keyboard: [
                 [{ 
+                  text: "Copy Link 🔗", 
+                  copy_text: {text: `${encodeURIComponent(imageUrl)}`}
+                }],
+                [{ 
                   text: "Share Link 🔗", 
                   url: `tg://msg_url?url=${encodeURIComponent(imageUrl)}`
                 }],

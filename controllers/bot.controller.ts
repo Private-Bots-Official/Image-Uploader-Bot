@@ -87,7 +87,7 @@ export const BotController = {
               inline_keyboard: [
                 [{ 
                   text: "Copy Link 🔗", 
-                  copy_text: {text: `${encodeURIComponent(imageUrl)}`}
+                  copy_text: {text: `${imageUrl}`}
                 }],
                 [{ 
                   text: "Share Link 🔗", 
